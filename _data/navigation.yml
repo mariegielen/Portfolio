@@ -9,24 +9,6 @@
 
 - name: stijlgids
   description: Stijlgids
-  folder: pages/stijlgids
-  permalink: stijlgids/
-  # fa-icon: icon-graduation-cap
-
-- name: Huisstijlelementen
-  description: Huisstijlelementen
-  folder: pages/Huisstijlelementen/
-  permalink: /Huisstijlelementen
-  # fa-icon: icon-info
-
-- name: Toepassingen
-  description: Stijlgids voor de Huistijlgids
-  folder: pages/Toepassingen
-  permalink: /Toepassingen
-  # fa-icon: icon-info
-
-#- name: Styleguide
- # description: Stijlgids voor de Huistijlgids
   # folder: pages/stijlgids
-  # permalink: /stijlgids
-  # fa-icon: icon-info
+  permalink: stijlgids/
+  fa-icon: icon-graduation-cap
