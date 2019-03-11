@@ -1,0 +1,212 @@
+.content{
+  margin-top:4%;
+  margin-bottom:17%;
+  margin-left:16%;
+}
+
+
+.patroon{
+  width:100%;
+  background-image: url("../images/patroon-vert.png");
+  margin-left:-14%;
+  height:93%;
+  position: absolute;
+  background-repeat: repeat;
+  z-index:0;
+}
+
+.foto{
+  width:400px;
+}
+
+.kleuren{
+  color:white;
+  font-size:20px;
+  font-weight:800;
+  p{
+    font-size:16px;
+    font-weight: $font-weight-light;
+  }
+}
+
+.donkerpaars{
+  background-color:$mycolor-1;
+}
+
+.lichtpaars{
+  background-color:$mycolor-2;
+}
+.rood{
+  background-color:$mycolor-3;
+}
+.oranje{
+  background-color:$mycolor-4;
+}
+.blauw{
+  background-color:$mycolor-5;
+}
+
+/* NAVIGATIE
+---------------------------------------------
+*/
+
+.navbar a { 
+    border: none;
+    margin-left:14%;
+}
+
+.logo{
+  width:70%;
+}
+
+.navbar-brand .logo{
+  margin-right:-10rem;
+}
+
+.navbar-nav a{
+  margin-left:2rem;
+  border-radius: 16px;
+  background-color: $mycolor-1;
+}
+
+.bg-light{
+  color: #FFFFFF;
+  background-color: #FFFFFF!important;
+  box-shadow: 10px 0 10px grey;
+  z-index:99;
+}
+
+//KLEUR EN ACHTERGROND ACTIEVE LINK
+.navbar-light .navbar-nav .active>.nav-link{ 
+  color:white;
+  background-color: $mycolor-2;
+}
+
+
+
+//On hover
+.navbar-light .navbar-nav .active>.nav-link:hover{ 
+  color:white;
+  background-color: $mycolor-4;
+}
+
+//On click
+.navbar-light .navbar-nav .active>.nav-link:active{ 
+  color:white;
+  background-color: $mycolor-3;
+}
+
+//KLEUR EN ACHTERGROND GEWONE LINK
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link{ 
+  color:white;
+  background-color: $mycolor-1;
+}
+
+//On hover
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{ 
+  color:white;
+  background-color: $mycolor-2;
+}
+
+//On click
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active{ 
+  color:white;
+  background-color: $mycolor-4;
+}
+
+//DROPDOWN NAVIGATIE
+.dropdown-menu{
+  border:none;
+  background-color:transparent!important;
+  margin-top:-7px;
+}
+
+.navbar-nav .dropdown-menu a{
+  background-color:$mycolor-2;
+  color:#ffffff;
+  padding:8px 5px 8px 10px;
+}
+
+.navbar-nav .dropdown-menu a:hover{
+  background-color:$mycolor-1;
+}
+
+.navbar-nav .dropdown-menu a:active{
+  background-color:$mycolor-4;
+}
+
+
+
+/* FOOTER
+----------------------------------------------
+sticked to the bottom with small content pages
+*/
+html {
+    height: 100%;
+  }
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+  }
+
+.bh-absolute-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+footer {
+    background-color: $mycolor-2;
+    color: $color-white;
+    padding-top:2%;
+    margin-bottom:-20px;
+    a {
+        color: $color-white;
+        &:hover {
+            
+        }
+    }
+}
+
+.footer{
+  padding-left:18%;
+}
+
+/* BACK TO TOP
+-------------------------
+*/
+#to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:$mycolor-1; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  //padding: 15px; /* Some padding */
+  width: 40px;
+  height: 40px;
+  border-radius: 20px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  &:hover {
+    background-color:$mycolor-3; 
+  }
+}
+.logo-footer{
+  height:100px;
+  border-bottom:0;
+  &:hover{
+    border-bottom:0;
+  }
+  &:active{
+    background-color:transparent;
+    color:transparent;
+}
+}
