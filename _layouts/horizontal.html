@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ page.title }} | Huistijlgids</title>
+    <title>{{ page.title }}</title>
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/app.scss %}">
@@ -11,22 +11,37 @@
 
 <body data-spy="scroll" data-target="#toc">  
 
+    
+        <a id="contacto"></a>
+
+
+        <div class="header">
+                hey
+                <a color="white" href="#contacto">know more</a>
+            </div>
+
+            
+               
+                 
+                  
+<div id="stickyheader">
 {% include nav_hor.html %}
+</div>
 
-<div class="container">
-    <div class="row">
-        <div class="aboutme">
+<div id="stickyalias"></div>
 
-        </div>
-        <main class="col-8 col-md-8 col-lg-8 content">
+<div class="kontainer">
+    
+        
                 {{ content }}
-        </main>
-    </div>
+    
 </div>
 
 
 
 {% include footer.html %}
 {% include scripts-bottom.html %}
+<script src="{{ site.baseurl }}/assets/scripts/stickynav.js"></script>
+
 </body>
 </html>

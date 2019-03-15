@@ -201,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: 600;
   font-size: 4rem;
-  color: #2e2d60; }
+  color: #0C2A3D; }
 
 h2 {
   font-weight: 300;
@@ -289,19 +289,19 @@ main ol {
   #toc .nav {
     display: block; }
 
-.content {
-  margin-top: 4%;
-  margin-bottom: 17%;
-  margin-left: 16%; }
+.header {
+  background-color: #0C2A3D;
+  width: 100vw;
+  height: 100.5vh; }
 
-.patroon {
-  width: 100%;
-  background-image: url("../images/patroon-vert.png");
-  margin-left: -14%;
-  height: 93%;
-  position: absolute;
-  background-repeat: repeat;
-  z-index: 0; }
+#part1 {
+  background-color: pink;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh; }
+
+h2 {
+  margin-top: 0; }
 
 .foto {
   width: 400px; }
@@ -314,20 +314,32 @@ main ol {
     font-size: 16px;
     font-weight: 200; }
 
-.donkerpaars {
-  background-color: #2e2d60; }
+.donkerblauw {
+  background-color: #0C2A3D; }
 
-.lichtpaars {
-  background-color: #515ea4; }
+#stickyheader {
+  width: 100%; }
 
-.rood {
-  background-color: #e87263; }
+#stickyalias {
+  display: none; }
 
-.oranje {
-  background-color: #f9ab81; }
+/*
+ *Scrolling
+ */
+a[id="aboutme"]:target ~ .part1 article.part1 {
+  -webkit-transform: translateY(-1000px);
+  transform: translateY(-1000px); }
 
-.blauw {
-  background-color: #68a8de; }
+.panel {
+  width: 100%;
+  height: 500px;
+  z-index: 0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
 /* NAVIGATIE
 ---------------------------------------------
@@ -336,21 +348,17 @@ main ol {
   border: none;
   margin-left: 14%; }
 
-.logo {
-  width: 70%; }
-
 .navbar-brand .logo {
   margin-right: -10rem; }
 
 .navbar-nav a {
   margin-left: 2rem;
   border-radius: 16px;
-  background-color: #2e2d60; }
+  background-color: #0C2A3D; }
 
 .bg-light {
-  color: #FFFFFF;
-  background-color: #FFFFFF !important;
-  box-shadow: 10px 0 10px grey;
+  color: #0C2A3D;
+  background-color: #0C2A3D !important;
   z-index: 99; }
 
 .navbar-light .navbar-nav .active > .nav-link {
@@ -367,7 +375,7 @@ main ol {
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
   color: white;
-  background-color: #2e2d60; }
+  background-color: #0C2A3D; }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   color: white;
@@ -388,7 +396,7 @@ main ol {
   padding: 8px 5px 8px 10px; }
 
 .navbar-nav .dropdown-menu a:hover {
-  background-color: #2e2d60; }
+  background-color: #0C2A3D; }
 
 .navbar-nav .dropdown-menu a:active {
   background-color: #f9ab81; }
@@ -441,7 +449,7 @@ footer {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #2e2d60;
+  background-color: #0C2A3D;
   /* Set a background color */
   color: white;
   /* Text color */

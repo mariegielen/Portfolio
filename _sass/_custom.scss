@@ -1,20 +1,22 @@
-.content{
-  margin-top:4%;
-  margin-bottom:17%;
-  margin-left:16%;
+
+
+.header{
+  background-color:$mycolor-1;
+  width:100vw;
+  height:100.5vh;
 }
 
 
-.patroon{
-  width:100%;
-  background-image: url("../images/patroon-vert.png");
-  margin-left:-14%;
-  height:93%;
-  position: absolute;
-  background-repeat: repeat;
-  z-index:0;
+#part1{
+  background-color:pink;
+  width:100vw;
+  height:100vh;
+  padding-top:10vh;
 }
 
+h2{
+  margin-top:0;
+}
 .foto{
   width:400px;
 }
@@ -29,52 +31,81 @@
   }
 }
 
-.donkerpaars{
+.donkerblauw{
   background-color:$mycolor-1;
 }
 
-.lichtpaars{
-  background-color:$mycolor-2;
+
+
+#stickyheader {
+  width: 100%;
+  
 }
-.rood{
-  background-color:$mycolor-3;
+#stickyalias {
+  display: none;
 }
-.oranje{
-  background-color:$mycolor-4;
+
+/*
+ *Scrolling
+ */
+
+ a[ id= "aboutme" ]:target ~ .part1 article.part1 {
+  -webkit-transform: translateY( -1000px);
+  transform: translateY( -1000px );
 }
-.blauw{
-  background-color:$mycolor-5;
+
+
+.panel {
+  width: 100%;
+  height: 500px;
+  z-index:0; 
+  -webkit-transform: translateZ( 0 );
+  transform: translateZ( 0 );
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
 }
+
+
 
 /* NAVIGATIE
 ---------------------------------------------
 */
 
+
+
 .navbar a { 
     border: none;
     margin-left:14%;
+    
+
 }
 
-.logo{
-  width:70%;
-}
 
 .navbar-brand .logo{
   margin-right:-10rem;
 }
 
+
+
 .navbar-nav a{
   margin-left:2rem;
   border-radius: 16px;
   background-color: $mycolor-1;
+  
 }
 
+
 .bg-light{
-  color: #FFFFFF;
-  background-color: #FFFFFF!important;
-  box-shadow: 10px 0 10px grey;
+  color: $mycolor-1;
+  background-color: $mycolor-1!important;
+  //box-shadow: 10px 0 10px grey;
   z-index:99;
 }
+
+ 
 
 //KLEUR EN ACHTERGROND ACTIEVE LINK
 .navbar-light .navbar-nav .active>.nav-link{ 
@@ -143,6 +174,7 @@ sticked to the bottom with small content pages
 */
 html {
     height: 100%;
+
   }
 
 body {

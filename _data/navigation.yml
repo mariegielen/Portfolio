@@ -11,4 +11,20 @@
   description: Stijlgids
   # folder: pages/stijlgids
   permalink: stijlgids/
-  fa-icon: icon-graduation-cap
+  # fa-icon: icon-graduation-cap
+ 
+- name: About me
+  description: About me
+  permalink: '#aboutme'
+
+
+- name: Work
+  description: Work
+  class: work
+  #permalink:
+
+
+- name: Contact
+  description: Contact
+  class: contact
+  permalink: footer.html
