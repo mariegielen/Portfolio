@@ -10,38 +10,32 @@
 </head>
 
 <body data-spy="scroll" data-target="#toc">  
+        
+
 
     
-        <a id="contacto"></a>
-
-
-        <div class="header">
-                hey
-                <a color="white" href="#contacto">know more</a>
-            </div>
-
-            
-               
-                 
-                  
-<div id="stickyheader">
-{% include nav_hor.html %}
+<div class="header">
+    <a color="white" font-size="100pt" href="#aboutme">know more</a>
 </div>
 
-<div id="stickyalias"></div>
+            
+                     
+                 
+                  
 
 <div class="kontainer">
-    
-        
-                {{ content }}
-    
+ <div id="stickyheader">
+    {% include nav_hor.html %}
+</div> 
+
+    {{ content }}
 </div>
 
 
 
 {% include footer.html %}
 {% include scripts-bottom.html %}
-<script src="{{ site.baseurl }}/assets/scripts/stickynav.js"></script>
+
 
 </body>
 </html>

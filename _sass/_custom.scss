@@ -3,7 +3,8 @@
 .header{
   background-color:$mycolor-1;
   width:100vw;
-  height:100.5vh;
+  height:100vh;
+  position: relative;
 }
 
 
@@ -11,7 +12,29 @@
   background-color:pink;
   width:100vw;
   height:100vh;
-  padding-top:10vh;
+  position: relative;
+  z-index:-1;
+}
+
+#part1 a{
+  position: absolute;
+  left: 0px;
+  top: -120px;
+}
+
+
+#part2{
+  background-color:sandybrown;
+  width:100vw;
+  height:100vh;
+  position: relative;
+  z-index:-1;
+}
+
+#part2 a{
+  position: absolute;
+  left: 0px;
+  top: -120px;
 }
 
 h2{
@@ -39,34 +62,16 @@ h2{
 
 #stickyheader {
   width: 100%;
+  position: -webkit-sticky; /* Required for Safari */
+  position: sticky;
+  top:0;
   
 }
 #stickyalias {
   display: none;
 }
 
-/*
- *Scrolling
- */
 
- a[ id= "aboutme" ]:target ~ .part1 article.part1 {
-  -webkit-transform: translateY( -1000px);
-  transform: translateY( -1000px );
-}
-
-
-.panel {
-  width: 100%;
-  height: 500px;
-  z-index:0; 
-  -webkit-transform: translateZ( 0 );
-  transform: translateZ( 0 );
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-
-}
 
 
 
@@ -78,7 +83,7 @@ h2{
 
 .navbar a { 
     border: none;
-    margin-left:14%;
+    
     
 
 }

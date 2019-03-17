@@ -7,10 +7,10 @@
   permalink: / 
   # fa-icon: icon-info
 
-- name: stijlgids
-  description: Stijlgids
+#- name: stijlgids
+ # description: Stijlgids
   # folder: pages/stijlgids
-  permalink: stijlgids/
+  #permalink: stijlgids/
   # fa-icon: icon-graduation-cap
  
 - name: About me
@@ -21,10 +21,10 @@
 - name: Work
   description: Work
   class: work
-  #permalink:
+  permalink: '#work'
 
 
 - name: Contact
   description: Contact
   class: contact
-  permalink: footer.html
+  permalink: '#contact'
