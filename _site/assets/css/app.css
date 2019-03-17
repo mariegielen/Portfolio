@@ -320,7 +320,8 @@ main ol {
   top: -120px; }
 
 h2 {
-  margin-top: 0; }
+  margin-top: 0;
+  font-family: 'Abril Fatface', cursive; }
 
 .foto {
   width: 400px; }
@@ -416,7 +417,8 @@ body {
   position: relative;
   margin: 0;
   padding-bottom: 6rem;
-  min-height: 100%; }
+  min-height: 100%;
+  font-family: 'Barlow Semi Condensed', sans-serif; }
 
 .bh-absolute-bottom {
   position: absolute;

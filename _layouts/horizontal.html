@@ -6,36 +6,25 @@
     <title>{{ page.title }}</title>
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/app.scss %}">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/app.css">
+    <link rel="stylesheet" href="{{ site.url }}{% link assets/css/app.scss %}">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
 </head>
 
 <body data-spy="scroll" data-target="#toc">  
-        
-
-
-<a name="home">	</a>   
-<div class="header">
-    <a color="white" font-size="100pt" href="#aboutme">know more</a>
-</div>
-
-            
-                     
-                 
-                  
+          
 
 <div class="kontainer">
- <div id="stickyheader">
-    {% include nav_hor.html %}
-</div> 
-
+ 
     {{ content }}
 </div>
 
 
 
 {% include footer.html %}
+<script src="{{ site.baseurl }}/assets/scripts/scrolling.js"></script>
+
 {% include scripts-bottom.html %}
 
 
