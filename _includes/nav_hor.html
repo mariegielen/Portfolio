@@ -11,27 +11,32 @@
         <div class="collapse navbar-collapse" id="mainNavigation">
 
         <ul class="navbar-nav mr-auto">
-        {%- for nav-item in site.data.navigation %}
-        
-            {%- capture item_classes %}{% if page.url contains nav-item.permalink %}active{% endif %}{% endcapture %}
-            {%- if nav-item.folder %}
-                <li class="nav-item dropdown {{ item_classes }}">
-                        <a class="nav-link dropdown-toggle" href="{{ nav-item.permalink | relative_url }}" id="navbarDropdown" title="{{ nav-item.name }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{ nav-item.name }}
+                <li class="nav-item active">
+                        <a class="nav-link" href="#home" title="Home">
+                            Home
                         </a>
-                        {%- include navigation-from-folder.html nav-item=nav-item %}
                 </li>
-            {%- else %}
-            <li class="nav-item {{ item_classes }}">
-                    <a class="nav-link" href="{{ nav-item.permalink | relative_url }}" title="{{ nav-item.name }}">
-                        {{ nav-item.name }}
-                    </a>
-            </li>
-            {%- endif %}
-
-        {%- endfor %}
+                <li class="nav-item ">
+                        <a class="nav-link" href="#aboutme" title="About me">
+                            About me
+                        </a>
+                </li>
+                <li class="nav-item ">
+                        <a class="nav-link" href="#work" title="Work">
+                            Work
+                        </a>
+                </li>
+                <li class="nav-item ">
+                        <a class="nav-link" href="#contact" title="Contact">
+                            Contact
+                        </a>
+                </li>
         </ul>
 
         </div>
     </div><!-- /div.container -->
 </nav>
+
+
+
+
