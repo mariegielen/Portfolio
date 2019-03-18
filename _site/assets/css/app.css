@@ -316,6 +316,10 @@ main ol {
 .headerlink {
   text-align: center; }
 
+.headerlink a:active {
+  background-color: transparent;
+  color: #fdedd8; }
+
 #part1 {
   background-color: #fdedd8;
   width: 100vw;

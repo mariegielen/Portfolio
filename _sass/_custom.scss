@@ -31,6 +31,11 @@
   text-align: center;
 }
 
+.headerlink a:active{
+  background-color:transparent;
+  color: $mycolor-3;
+}
+
 
 #part1{
   background-color:$mycolor-3;
