@@ -289,6 +289,12 @@ main ol {
   #toc .nav {
     display: block; }
 
+.logo {
+  position: absolute;
+  height: 120px;
+  margin-left: 5%;
+  margin-top: -4.2rem; }
+
 .header {
   background-color: #0c2a3d;
   width: 100vw;
@@ -320,7 +326,7 @@ main ol {
 #part1 a {
   position: absolute;
   left: 0px;
-  top: -100px; }
+  top: -110px; }
 
 #part2 {
   background-color: none;
@@ -332,7 +338,7 @@ main ol {
 #part2 a {
   position: absolute;
   left: 0px;
-  top: -100px; }
+  top: -110px; }
 
 h2 {
   margin-top: 0;
@@ -363,7 +369,8 @@ h2 {
   display: none; }
 
 .navbar.navbar-expand-md.navbar-light.bg-light.navbar-custom {
-  padding: 0; }
+  padding-top: 3rem;
+  padding-bottom: 0; }
 
 /* NAVIGATIE
 ---------------------------------------------
@@ -371,8 +378,7 @@ h2 {
 #mainNavigation.collapse.navbar-collapse {
   text-transform: uppercase;
   font-size: 1.4em;
-  padding-left: 25%;
-  padding-top: 4%; }
+  padding-left: 25%; }
 
 #mainNavigation.collapse.navbar-collapse.show {
   text-transform: inherit;
