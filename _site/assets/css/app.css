@@ -289,32 +289,6 @@ main ol {
   #toc .nav {
     display: block; }
 
-#mainNavigation.collapse.navbar-collapse {
-  text-transform: uppercase;
-  font-size: 1.4em;
-  padding-left: 25%; }
-
-#mainNavigation.collapse.navbar-collapse.show {
-  text-transform: inherit;
-  font-size: inherit;
-  padding-left: 0%; }
-
-#mainNavigation.collapse.navbar-collapse a {
-  color: #fdedd8;
-  margin-left: 0px; }
-
-#mainNavigation.collapse.navbar-collapse a:hover {
-  color: #fdedd8;
-  background-color: #ee9c75; }
-
-#mainNavigation.collapse.navbar-collapse a:active {
-  color: #0c2a3d;
-  background-color: #fdedd8;
-  border-radius: 0; }
-
-nav.navbar.navbar-expand-md.navbar-light.bg-light.navbar-custom {
-  padding: 0 !important; }
-
 .header {
   background-color: #0c2a3d;
   width: 100vw;
@@ -346,7 +320,7 @@ nav.navbar.navbar-expand-md.navbar-light.bg-light.navbar-custom {
 #part1 a {
   position: absolute;
   left: 0px;
-  top: -120px; }
+  top: -100px; }
 
 #part2 {
   background-color: none;
@@ -358,7 +332,7 @@ nav.navbar.navbar-expand-md.navbar-light.bg-light.navbar-custom {
 #part2 a {
   position: absolute;
   left: 0px;
-  top: -120px; }
+  top: -100px; }
 
 h2 {
   margin-top: 0;
@@ -388,19 +362,47 @@ h2 {
 #stickyalias {
   display: none; }
 
-.navbar-light .navbar-toggler-icon {
-  float: right; }
+.navbar.navbar-expand-md.navbar-light.bg-light.navbar-custom {
+  padding: 0; }
 
 /* NAVIGATIE
 ---------------------------------------------
 */
+#mainNavigation.collapse.navbar-collapse {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  padding-left: 25%;
+  padding-top: 4%; }
+
+#mainNavigation.collapse.navbar-collapse.show {
+  text-transform: inherit;
+  font-size: inherit;
+  padding: 0 !important; }
+
+#mainNavigation.collapse.navbar-collapse a {
+  color: #fdedd8;
+  margin-left: 0px; }
+
+#mainNavigation.collapse.navbar-collapse a:hover {
+  color: #0c2a3d;
+  background-color: #fdedd8; }
+
+#mainNavigation.collapse.navbar-collapse a:active {
+  color: #fdedd8;
+  background-color: #ee9c75;
+  border-radius: 0; }
+
+li.nav-item > a.nav-link {
+  padding: 0.9em 1.7rem;
+  text-transform: uppercase; }
+
 .navbar a {
   border: none; }
 
 .navbar-nav a {
-  margin-left: 2.7rem;
   background-color: #0c2a3d;
-  white-space: nowrap; }
+  white-space: nowrap;
+  padding: 0; }
 
 .bg-light {
   color: #0c2a3d;
@@ -409,8 +411,7 @@ h2 {
 
 .dropdown-menu {
   border: none;
-  background-color: transparent !important;
-  margin-top: -7px; }
+  background-color: transparent !important; }
 
 /* FOOTER
 ----------------------------------------------
