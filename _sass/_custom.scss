@@ -1,3 +1,38 @@
+#mainNavigation.collapse.navbar-collapse{
+  text-transform:uppercase;
+  font-size:1.4em;
+  padding-left: 25%;
+}
+
+#mainNavigation.collapse.navbar-collapse.show{
+  text-transform:inherit;
+  font-size:inherit;
+  padding-left:0%;
+}
+
+#mainNavigation.collapse.navbar-collapse a{
+  color:$mycolor-3;
+  margin-left:0px;
+}
+
+#mainNavigation.collapse.navbar-collapse a:hover{
+  color:$mycolor-3;
+  background-color: $mycolor-2;
+}
+
+#mainNavigation.collapse.navbar-collapse a:active{
+  color: $mycolor-1;
+  background-color: $mycolor-3;
+  border-radius: 0;
+}
+
+
+nav.navbar.navbar-expand-md.navbar-light.bg-light.navbar-custom{
+  padding:0!important;
+
+}
+
+
 
 
 .header{
@@ -5,14 +40,30 @@
   width:100vw;
   height:100vh;
   position: relative;
+  padding-top:20vh;
+}
+
+.header-logo{
+  margin-left:auto;
+  margin-right: auto;
+  display: block;
+  height:50vh;
+  
 }
 
 .header a{
   color:$mycolor-2;
+  font-size:3em;
+  line-height: 1.3em;
 }
 
+.headerlink{
+  text-align: center;
+}
+
+
 #part1{
-  background-color:pink;
+  background-color:$mycolor-3;
   width:100vw;
   height:100vh;
   position: relative;
@@ -27,7 +78,7 @@
 
 
 #part2{
-  background-color:sandybrown;
+  background-color:none;
   width:100vw;
   height:100vh;
   position: relative;
@@ -42,7 +93,7 @@
 
 h2{
   margin-top:0;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface', serif;
 }
 .foto{
   width:400px;
@@ -76,7 +127,9 @@ h2{
 }
 
 
-
+.navbar-light .navbar-toggler-icon {
+  float: right;
+}
 
 
 /* NAVIGATIE
@@ -87,22 +140,16 @@ h2{
 
 .navbar a { 
     border: none;
-    
-    
-
+  
 }
 
-
-.navbar-brand .logo{
-  margin-right:-10rem;
-}
 
 
 
 .navbar-nav a{
-  margin-left:2rem;
-  border-radius: 16px;
+  margin-left:2.7rem;
   background-color: $mycolor-1;
+  white-space: nowrap;
   
 }
 
@@ -116,63 +163,13 @@ h2{
 
  
 
-//KLEUR EN ACHTERGROND ACTIEVE LINK
-.navbar-light .navbar-nav .active>.nav-link{ 
-  color:white;
-  background-color: $mycolor-2;
-}
 
-
-
-//On hover
-.navbar-light .navbar-nav .active>.nav-link:hover{ 
-  color:white;
-  background-color: $mycolor-4;
-}
-
-//On click
-.navbar-light .navbar-nav .active>.nav-link:active{ 
-  color:white;
-  background-color: $mycolor-3;
-}
-
-//KLEUR EN ACHTERGROND GEWONE LINK
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link{ 
-  color:white;
-  background-color: $mycolor-1;
-}
-
-//On hover
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{ 
-  color:white;
-  background-color: $mycolor-2;
-}
-
-//On click
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active{ 
-  color:white;
-  background-color: $mycolor-4;
-}
 
 //DROPDOWN NAVIGATIE
 .dropdown-menu{
   border:none;
   background-color:transparent!important;
   margin-top:-7px;
-}
-
-.navbar-nav .dropdown-menu a{
-  background-color:$mycolor-2;
-  color:#ffffff;
-  padding:8px 5px 8px 10px;
-}
-
-.navbar-nav .dropdown-menu a:hover{
-  background-color:$mycolor-1;
-}
-
-.navbar-nav .dropdown-menu a:active{
-  background-color:$mycolor-4;
 }
 
 
@@ -253,3 +250,6 @@ footer {
     color:transparent;
 }
 }
+
+
+

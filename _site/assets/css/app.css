@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito");
-@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100");
 .w-33 {
   width: 33% !important; }
 
@@ -187,15 +187,15 @@ html.lb-disable-scrolling {
   opacity: 1; }
 
 body {
-  font-family: "nunito", sans-serif;
-  font-weight: 200;
+  font-family: "barlow semi condensed", sans-serif;
+  font-weight: 100;
   font-size: 16px;
   line-height: 1.6em;
   background-color: #fefefe;
   color: #1e1e1e; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito";
+  font-family: "Abril fatface";
   font-weight: 600; }
 
 h1 {
@@ -220,7 +220,7 @@ a {
   text-decoration: none;
   color: #ee9c75; }
   a:hover {
-    color: #fa7878;
+    color: #ee9c75;
     text-decoration: none; }
   a:active {
     background-color: #ee9c75;
@@ -228,7 +228,7 @@ a {
     color: #fefefe; }
 
 blockquote {
-  background: #fa7878;
+  background: #ee9c75;
   color: #fefefe;
   margin-left: 0;
   padding: 1px 30px; }
@@ -242,7 +242,7 @@ main ul {
     text-indent: -25px; }
     main ul li:before {
       content: '\2022';
-      color: #fa7878;
+      color: #ee9c75;
       margin-right: 18px; }
 
 main ol {
@@ -260,9 +260,9 @@ main ol {
       padding: 3px 6px;
       margin-right: 5px;
       border-radius: 5px;
-      background-color: #fa7878;
+      background-color: #ee9c75;
       color: #fefefe;
-      font-family: "Nunito";
+      font-family: "Abril fatface";
       font-weight: 600; }
 
 /* VERTICAL NAVIGATION BAR
@@ -289,17 +289,55 @@ main ol {
   #toc .nav {
     display: block; }
 
+#mainNavigation.collapse.navbar-collapse {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  padding-left: 25%; }
+
+#mainNavigation.collapse.navbar-collapse.show {
+  text-transform: inherit;
+  font-size: inherit;
+  padding-left: 0%; }
+
+#mainNavigation.collapse.navbar-collapse a {
+  color: #fdedd8;
+  margin-left: 0px; }
+
+#mainNavigation.collapse.navbar-collapse a:hover {
+  color: #fdedd8;
+  background-color: #ee9c75; }
+
+#mainNavigation.collapse.navbar-collapse a:active {
+  color: #0c2a3d;
+  background-color: #fdedd8;
+  border-radius: 0; }
+
+nav.navbar.navbar-expand-md.navbar-light.bg-light.navbar-custom {
+  padding: 0 !important; }
+
 .header {
   background-color: #0c2a3d;
   width: 100vw;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  padding-top: 20vh; }
+
+.header-logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 50vh; }
 
 .header a {
-  color: #ee9c75; }
+  color: #ee9c75;
+  font-size: 3em;
+  line-height: 1.3em; }
+
+.headerlink {
+  text-align: center; }
 
 #part1 {
-  background-color: pink;
+  background-color: #fdedd8;
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -311,7 +349,7 @@ main ol {
   top: -120px; }
 
 #part2 {
-  background-color: sandybrown;
+  background-color: none;
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -324,7 +362,7 @@ main ol {
 
 h2 {
   margin-top: 0;
-  font-family: 'Abril Fatface', cursive; }
+  font-family: 'Abril Fatface', serif; }
 
 .foto {
   width: 400px; }
@@ -335,7 +373,7 @@ h2 {
   font-weight: 800; }
   .kleuren p {
     font-size: 16px;
-    font-weight: 200; }
+    font-weight: 100; }
 
 .donkerblauw {
   background-color: #0c2a3d; }
@@ -350,64 +388,29 @@ h2 {
 #stickyalias {
   display: none; }
 
+.navbar-light .navbar-toggler-icon {
+  float: right; }
+
 /* NAVIGATIE
 ---------------------------------------------
 */
 .navbar a {
   border: none; }
 
-.navbar-brand .logo {
-  margin-right: -10rem; }
-
 .navbar-nav a {
-  margin-left: 2rem;
-  border-radius: 16px;
-  background-color: #0c2a3d; }
+  margin-left: 2.7rem;
+  background-color: #0c2a3d;
+  white-space: nowrap; }
 
 .bg-light {
   color: #0c2a3d;
   background-color: #0c2a3d !important;
   z-index: 99; }
 
-.navbar-light .navbar-nav .active > .nav-link {
-  color: white;
-  background-color: #ee9c75; }
-
-.navbar-light .navbar-nav .active > .nav-link:hover {
-  color: white;
-  background-color: #fa7878; }
-
-.navbar-light .navbar-nav .active > .nav-link:active {
-  color: white;
-  background-color: #fdedd8; }
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
-  color: white;
-  background-color: #0c2a3d; }
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: white;
-  background-color: #ee9c75; }
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active {
-  color: white;
-  background-color: #fa7878; }
-
 .dropdown-menu {
   border: none;
   background-color: transparent !important;
   margin-top: -7px; }
-
-.navbar-nav .dropdown-menu a {
-  background-color: #ee9c75;
-  color: #ffffff;
-  padding: 8px 5px 8px 10px; }
-
-.navbar-nav .dropdown-menu a:hover {
-  background-color: #0c2a3d; }
-
-.navbar-nav .dropdown-menu a:active {
-  background-color: #fa7878; }
 
 /* FOOTER
 ----------------------------------------------
@@ -483,13 +486,13 @@ footer {
     color: transparent; }
 
 .client-style {
-  font-family: "nunito", sans-serif;
+  font-family: "barlow semi condensed", sans-serif;
   border-bottom: 1px solid #b4b4b4;
   border-top: 1px solid #b4b4b4;
   margin: 1em 0 2em; }
   .client-style h1, .client-style h2, .client-style h3, .client-style h4, .client-style h5, .client-style h6 {
-    font-family: "nunito"; }
+    font-family: "barlow semi condensed 100"; }
   .client-style a {
-    color: #fa7878; }
+    color: #ee9c75; }
 
 /* hier geen CSS schrijven. Enkel en alleen linken naar scss-bestanden */

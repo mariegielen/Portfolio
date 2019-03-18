@@ -6,7 +6,7 @@
     <title>Marie Gielen</title>
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="//assets/css/app.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
@@ -19,17 +19,33 @@
  
     <a name="home">	</a>   
 <div class="header">
-	<a href="#aboutme">Get to know me</a>
-    <a href="#aboutme">&#709;</a>
+	<div class="row">
+		<div class="headerlogo col-md-5 offset-md-2 col-lg-3">
+			<img class="header-logo" src="//assets/images/logo/logo-oranje.png" alt="logo" height="100px" href="#home">
+		</div>
+
+		<div class="headerlink col-md-4 align-self-center">
+			<a href="#aboutme">Get to know me ></a>
+		</div>
+
+	</div>
+
+
+	
 </div>
 
 <div id="stickyheader">
     
+
 <nav class=" navbar navbar-expand-md navbar-light bg-light navbar-custom">
-    <div class="container"><!-- <<< verwijder als je navigatie over de ganse breedte wenst -->
-        <a class="navbar-brand" href="#">
-            <img class="logo" src="http://localhost:4000/assets/images/logo/logo-oranje.png" alt="logo" height="100px" href="#home">
-        </a>
+        
+
+    
+        <!--<a class="navbar-brand" href="#">
+                <img class="logo" src="http://localhost:4000/assets/images/logo/logo-website.png" alt="logo" href="#home">
+            </a> 
+-->
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,7 +53,7 @@
         <div class="collapse navbar-collapse" id="mainNavigation">
 
         <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                         <a class="nav-link" href="#home" title="Home">
                             Home
                         </a>
@@ -60,12 +76,15 @@
         </ul>
 
         </div>
-    </div><!-- /div.container -->
+   
+
 </nav>
 
+<!--
 
 
 
+-->
 
 </div> 
 
