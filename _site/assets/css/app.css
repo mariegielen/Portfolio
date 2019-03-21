@@ -289,11 +289,22 @@ main ol {
   #toc .nav {
     display: block; }
 
-.logo {
-  position: absolute;
-  height: 120px;
-  margin-left: 5%;
-  margin-top: -4.2rem; }
+h2.aboutme {
+  color: #0c2a3d;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 50pt;
+  margin-top: 20px; }
+
+.highlight {
+  background-color: #ee9c75;
+  position: relative;
+  display: inline-block;
+  margin-bottom: -10px;
+  height: 20px; }
+
+.border {
+  border: red 1px solid; }
 
 .header {
   background-color: #0c2a3d;
@@ -362,6 +373,15 @@ h2 {
 .donkerblauw {
   background-color: #0c2a3d; }
 
+/* NAVIGATIE
+---------------------------------------------
+*/
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253,237,216,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+.custom-toggler.navbar-toggler {
+  border-color: transparent; }
+
 #stickyheader {
   width: 100%;
   position: -webkit-sticky;
@@ -372,13 +392,18 @@ h2 {
 #stickyalias {
   display: none; }
 
-.navbar.navbar-expand-md.navbar-light.bg-light.navbar-custom {
-  padding-top: 3rem;
-  padding-bottom: 0; }
+.logo {
+  position: absolute;
+  height: 120px;
+  margin-left: 5%;
+  margin-top: -4.2rem; }
 
-/* NAVIGATIE
----------------------------------------------
-*/
+.navbar.navbar-expand-md.navbar-dark.bg-light.navbar-custom {
+  padding-top: 3rem;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0; }
+
 #mainNavigation.collapse.navbar-collapse {
   text-transform: uppercase;
   font-size: 1.4em;
