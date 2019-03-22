@@ -289,6 +289,32 @@ main ol {
   #toc .nav {
     display: block; }
 
+.contactinhoud {
+  color: #ee9c75;
+  font-size: 20pt;
+  line-height: 0pt; }
+
+.contactinhoud a {
+  color: #ee9c75; }
+
+.contactinhoud a:hover {
+  color: #0c2a3d; }
+
+.contactinhoud a:active {
+  color: #ee9c75;
+  background-color: transparent; }
+
+/* bij smaller scherm */
+@media screen and (max-width: 600px) {
+  .kontact {
+    padding-top: 100px; }
+
+  .contactinhoud {
+    font-size: 15pt; } }
+.icon {
+  height: 60px;
+  padding-right: 30px; }
+
 h2.aboutme {
   color: #0c2a3d;
   text-transform: uppercase;
