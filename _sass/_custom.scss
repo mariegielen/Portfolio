@@ -1,8 +1,47 @@
 ///////////// POSTS
 
+.picture1{
+  margin-top:12em;
+}
+
+.picturepost{
+  position: relative;
+  width:100%;
+}
+
+.number1{
+  background-image: url("../images/patronen/patroon-4.png");
+  background-repeat: no-repeat;
+  background-position: 7rem 16rem;
+}
+
+.border{
+  border:green 3px dashed;
+  position: relative;
+}
+
+.title1{
+  margin-top:12em;
+  position: relative;
+}
 
 
+.title1 a{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $mycolor-1;
+  font-family: 'Abril Fatface', serif;
+  color:$mycolor-3;
+  padding:0.3em;
+  text-transform: uppercase;
+  font-size:20pt;
+  display: inline-block;
+}
 
+.title1 a:hover{
+  background-color:rgba(14,62,92,1)
+}
 
 
 
@@ -23,16 +62,6 @@
 .contactinhoud a:active{
   color:$mycolor-2;
   background-color: transparent;
-}
-
-/* bij smaller scherm */
-@media screen and (max-width: 600px){
-  .kontact{
-    padding-top:100px;
-  }
-  .contactinhoud{
-    font-size:15pt;
-  }
 }
 
 .icon{
@@ -58,13 +87,6 @@ h2.aboutme{
   background-size: 100%;
 }
 
-/* breder patroon */
-@media screen and (min-width: 600px){
-  h2.aboutme {
-      width:7em;
-  }
-}
-
 h2.work{
   color:$mycolor-1;
   text-transform: uppercase;
@@ -88,6 +110,18 @@ h2.work{
   h2.work {
       width:7em;
   }
+  h2.contact {
+    width:7em;
+  } 
+  h2.aboutme {
+    width:7em;
+  } 
+  .kontact{
+    padding-top:100px;
+  }
+  .contactinhoud{
+    font-size:15pt;
+  }
 }
 
 h2.contact{
@@ -107,12 +141,6 @@ h2.contact{
   background-size: 100%;
 }
 
-/* breder patroon */
-@media screen and (min-width: 600px){
-  h2.contact {
-      width:7em;
-  }
-}
 
 .part-1margin{
   margin-top:8em;
@@ -130,19 +158,10 @@ h2.contact{
   line-height: 1.2em;
   color:$mycolor-1;
   display: inline-block;
-    border-bottom: 40px solid $mycolor-2;
-    padding-bottom: 0;
-    line-height: 55%;
+  border-bottom: 40px solid $mycolor-2;
+  padding-bottom: 0;
+  line-height: 55%;
 }
-
-
-
-
-.border{
-  border:green 3px dashed;
-}
-
-
 
 .header{
   background-color:$mycolor-1;
@@ -157,7 +176,6 @@ h2.contact{
   margin-right: auto;
   display: block;
   height:50vh;
-  
 }
 
 .header a{
@@ -175,7 +193,6 @@ h2.contact{
   color: $mycolor-3;
 }
 
-
 #part1{
   background-color:$mycolor-3;
   width:100vw;
@@ -185,7 +202,7 @@ h2.contact{
   z-index:-1;
 }
 
-#part1 a{
+#part1 a.aboutme{
   position: absolute;
   left: 0px;
   top: -110px;
@@ -195,12 +212,14 @@ h2.contact{
 #part2{
   background-color:none;
   width:100vw;
-  height:100vh;
+  min-height: 100vh;
+  height:auto;
+  padding-bottom:40em;
   position: relative;
-  z-index:-1;
+  z-index:1;
 }
 
-#part2 a{
+#part2 a.work{
   position: absolute;
   left: 0px;
   top: -110px;
@@ -254,6 +273,7 @@ h2{
   position: -webkit-sticky; /* Required for Safari */
   position: sticky;
   top:0;
+  z-index: 999;
   
 }
 #stickyalias {
@@ -308,17 +328,14 @@ li.nav-item > a.nav-link{
 }
 
 .navbar a { 
-  border: none;
-  
+  border: none; 
 }
-
 
 .navbar-nav a{
   background-color: $mycolor-1;
   white-space: nowrap;
   padding:0;
 }
-
 
 .bg-light{
   color: $mycolor-1;
@@ -413,6 +430,3 @@ footer {
     color:transparent;
 }
 }
-
-
-

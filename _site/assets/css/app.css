@@ -289,6 +289,41 @@ main ol {
   #toc .nav {
     display: block; }
 
+.picture1 {
+  margin-top: 12em; }
+
+.picturepost {
+  position: relative;
+  width: 100%; }
+
+.number1 {
+  background-image: url("../images/patronen/patroon-4.png");
+  background-repeat: no-repeat;
+  background-position: 7rem 16rem; }
+
+.border {
+  border: green 3px dashed;
+  position: relative; }
+
+.title1 {
+  margin-top: 12em;
+  position: relative; }
+
+.title1 a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #0c2a3d;
+  font-family: 'Abril Fatface', serif;
+  color: #fdedd8;
+  padding: 0.3em;
+  text-transform: uppercase;
+  font-size: 20pt;
+  display: inline-block; }
+
+.title1 a:hover {
+  background-color: #0e3e5c; }
+
 .contactinhoud {
   color: #ee9c75;
   font-size: 20pt;
@@ -304,13 +339,6 @@ main ol {
   color: #ee9c75;
   background-color: transparent; }
 
-/* bij smaller scherm */
-@media screen and (max-width: 600px) {
-  .kontact {
-    padding-top: 100px; }
-
-  .contactinhoud {
-    font-size: 15pt; } }
 .icon {
   height: 60px;
   padding-right: 30px; }
@@ -331,10 +359,6 @@ h2.aboutme {
   background-position: 0 0.7em;
   background-size: 100%; }
 
-/* breder patroon */
-@media screen and (min-width: 600px) {
-  h2.aboutme {
-    width: 7em; } }
 h2.work {
   color: #0c2a3d;
   text-transform: uppercase;
@@ -355,7 +379,19 @@ h2.work {
 /* breder patroon */
 @media screen and (min-width: 600px) {
   h2.work {
-    width: 7em; } }
+    width: 7em; }
+
+  h2.contact {
+    width: 7em; }
+
+  h2.aboutme {
+    width: 7em; }
+
+  .kontact {
+    padding-top: 100px; }
+
+  .contactinhoud {
+    font-size: 15pt; } }
 h2.contact {
   color: #0c2a3d;
   text-transform: uppercase;
@@ -372,10 +408,6 @@ h2.contact {
   background-position: 1.8em 0.7em;
   background-size: 100%; }
 
-/* breder patroon */
-@media screen and (min-width: 600px) {
-  h2.contact {
-    width: 7em; } }
 .part-1margin {
   margin-top: 8em;
   font-family: 'Abril Fatface', serif;
@@ -394,9 +426,6 @@ h2.contact {
   border-bottom: 40px solid #ee9c75;
   padding-bottom: 0;
   line-height: 55%; }
-
-.border {
-  border: green 3px dashed; }
 
 .header {
   background-color: #0c2a3d;
@@ -431,7 +460,7 @@ h2.contact {
   position: relative;
   z-index: -1; }
 
-#part1 a {
+#part1 a.aboutme {
   position: absolute;
   left: 0px;
   top: -110px; }
@@ -439,11 +468,13 @@ h2.contact {
 #part2 {
   background-color: none;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
+  padding-bottom: 40em;
   position: relative;
-  z-index: -1; }
+  z-index: 1; }
 
-#part2 a {
+#part2 a.work {
   position: absolute;
   left: 0px;
   top: -110px; }
@@ -480,7 +511,8 @@ h2 {
   position: -webkit-sticky;
   /* Required for Safari */
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 999; }
 
 #stickyalias {
   display: none; }
