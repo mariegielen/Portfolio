@@ -4,19 +4,51 @@ h2.aboutme{
   text-transform: uppercase;
   font-style:normal;
   font-size:50pt;
-  margin-top:20px;
+  padding-left: 20px;
+  background-image: url("../images/patronen/patroon-1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 5em;
+  margin-top:0.4em;
+  height:2.8em;
+  right:0;
+  background-position:0 0.7em;
+  background-size: 100%;
+}
+
+/* breder patroon */
+@media screen and (min-width: 600px){
+  h2.aboutme {
+      width:7em;
+  }
+}
+
+.part-1margin{
+  margin-top:8em;
+  font-family: 'Abril Fatface', serif;
+  color:$mycolor-2;
+  font-size: 25pt;
+  letter-spacing: 1px;
+  line-height: 30pt;
 }
 
 .highlight{
-  background-color:$mycolor-2;
   position: relative;
   display: inline-block;
-  margin-bottom:-10px;
-  height:20px;
+  height:0.7em;
+  line-height: 1.2em;
+  color:$mycolor-1;
+  display: inline-block;
+    border-bottom: 40px solid $mycolor-2;
+    padding-bottom: 0;
+    line-height: 55%;
 }
 
+
+
+
 .border{
-  border:red 1px solid;
+  border:green 3px dashed;
 }
 
 
@@ -56,7 +88,8 @@ h2.aboutme{
 #part1{
   background-color:$mycolor-3;
   width:100vw;
-  height:100vh;
+  min-height: 90vh;
+  height:auto;
   position: relative;
   z-index:-1;
 }
