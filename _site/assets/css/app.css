@@ -309,6 +309,47 @@ h2.aboutme {
 @media screen and (min-width: 600px) {
   h2.aboutme {
     width: 7em; } }
+h2.work {
+  color: #0c2a3d;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 50pt;
+  padding-left: 20px;
+  background-image: url("../images/patronen/patroon-2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 5em;
+  margin-top: 0.4em;
+  height: 2.8em;
+  right: 0;
+  padding-left: 1em;
+  background-position: 0 0.7em;
+  background-size: 100%; }
+
+/* breder patroon */
+@media screen and (min-width: 600px) {
+  h2.work {
+    width: 7em; } }
+h2.contact {
+  color: #0c2a3d;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 50pt;
+  background-image: url("../images/patronen/patroon-1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 5em;
+  margin-top: -0.88em;
+  height: 2.8em;
+  right: 0.42em;
+  padding-left: 1em;
+  background-position: 1.8em 0.7em;
+  background-size: 100%; }
+
+/* breder patroon */
+@media screen and (min-width: 600px) {
+  h2.contact {
+    width: 7em; } }
 .part-1margin {
   margin-top: 8em;
   font-family: 'Abril Fatface', serif;
@@ -495,15 +536,14 @@ body {
   left: 0; }
 
 footer {
-  background-color: #ee9c75;
+  height: 400px;
+  background-color: #fdedd8;
   color: #fefefe;
   padding-top: 2%;
-  margin-bottom: -20px; }
+  margin-bottom: -20px;
+  padding-right: 0; }
   footer a {
     color: #fefefe; }
-
-.footer {
-  padding-left: 18%; }
 
 /* BACK TO TOP
 -------------------------

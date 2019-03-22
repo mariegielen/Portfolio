@@ -23,6 +23,55 @@ h2.aboutme{
   }
 }
 
+h2.work{
+  color:$mycolor-1;
+  text-transform: uppercase;
+  font-style:normal;
+  font-size:50pt;
+  padding-left: 20px;
+  background-image: url("../images/patronen/patroon-2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 5em;
+  margin-top:0.4em;
+  height:2.8em;
+  right:0;
+  padding-left:1em;
+  background-position:0 0.7em;
+  background-size: 100%;
+}
+
+/* breder patroon */
+@media screen and (min-width: 600px){
+  h2.work {
+      width:7em;
+  }
+}
+
+h2.contact{
+  color:$mycolor-1;
+  text-transform: uppercase;
+  font-style:normal;
+  font-size:50pt;
+  background-image: url("../images/patronen/patroon-1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 5em;
+  margin-top:-0.88em;
+  height:2.8em;
+  right:0.42em;
+  padding-left:1em;
+  background-position:1.8em 0.7em;
+  background-size: 100%;
+}
+
+/* breder patroon */
+@media screen and (min-width: 600px){
+  h2.contact {
+      width:7em;
+  }
+}
+
 .part-1margin{
   margin-top:8em;
   font-family: 'Abril Fatface', serif;
@@ -273,10 +322,12 @@ body {
 }
 
 footer {
-    background-color: $mycolor-2;
+    height:400px;
+    background-color: $mycolor-3;
     color: $color-white;
     padding-top:2%;
     margin-bottom:-20px;
+    padding-right:0;
     a {
         color: $color-white;
         &:hover {
@@ -285,9 +336,6 @@ footer {
     }
 }
 
-.footer{
-  padding-left:18%;
-}
 
 /* BACK TO TOP
 -------------------------
