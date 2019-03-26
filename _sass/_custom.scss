@@ -13,8 +13,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left:15px;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -45,7 +44,7 @@
 }
 /// END hover over picture ///
 
-.number1, .number2{
+.number1, .number2, .number4{
   background-image: url("../images/patronen/patroon-4.png");
   background-repeat: no-repeat;
   background-position: 12rem 5rem;
@@ -66,6 +65,11 @@
 .number2{
   background-position: 5rem 7rem;
   background-size: 50%;
+}
+
+.number4{
+  background-position: 20rem 7rem;
+  background-size: 60%;
 }
 
 .border{
@@ -91,6 +95,11 @@
   transition: .4s ease;
 }
 
+.title1 {
+  color:$mycolor-3;
+}
+
+
 @media screen and (max-width: 767px){
   .title1 a, .title2 a{
     position: relative;
@@ -112,6 +121,13 @@
     background-size: 100%;
     padding-top:1em;
   }
+  .number4{
+    background-position: 0 14rem;
+    background-size: 100%;
+    padding-top:1em;
+  }
+
+
 }
 
 
@@ -288,7 +304,7 @@ h2.contact{
   width:100vw;
   min-height: 100vh;
   height:auto;
-  padding-bottom:40em;
+  padding-bottom:25em;
   position: relative;
   z-index:1;
 }
@@ -435,7 +451,7 @@ sticked to the bottom with small content pages
 */
 html {
     height: 100%;
-
+    overflow-x: hidden;
   }
 
 body {
@@ -444,7 +460,7 @@ body {
     padding-bottom: 6rem;
     min-height: 100%;
     font-family: 'Barlow Semi Condensed', sans-serif;
-
+  
   }
 
 .bh-absolute-bottom {
