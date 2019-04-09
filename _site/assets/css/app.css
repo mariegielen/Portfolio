@@ -722,6 +722,23 @@ footer {
     background-color: transparent;
     color: transparent; }
 
+h5 {
+  text-align: left;
+  background-color: #ee9c75;
+  display: inline-block;
+  padding: 0.3em; }
+
+.caption {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.3em;
+  color: #0c2a3d; }
+
+.carousel-caption {
+  text-align: left; }
+
+.carousel-indicators li, .carousel-indicators .active {
+  background-color: #ee9c75; }
+
 .client-style {
   font-family: "barlow semi condensed", sans-serif;
   border-bottom: 1px solid #b4b4b4;
